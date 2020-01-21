@@ -1,0 +1,65 @@
+* {
+  box-sizing: border-box; 
+}
+body {
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+  margin: 0;
+
+  font-family: 'Noto Sans', 'Arial Narrow', Arial, sans-serif
+}
+
+/* =========================== Header ========================= */
+
+header, footer {
+	background: grey;
+	height: 20vh;
+}
+header, footer, article, nav, aside {
+	padding: 1em;
+}
+
+header {
+  padding: 0 1em;
+  height: 3.2rem;
+  line-height: 3.2rem;
+}
+
+header h1 {
+	margin: 0;
+	font-size: 1.4rem;
+}
+
+/* =========================== Main ========================= */
+
+main {
+  display: flex;
+  flex: 1;
+}
+main > article {
+  flex: 1;
+  min-height: 4rem;
+}
+main > nav, 
+main > aside {
+  flex: 0 0 20vw;
+  /* flex: 1; */
+  background: beige;
+}
+main > nav {
+  order: -1;
+}
+
+@import 'css/loading.css';
+
+
+/* The Standard Bootstrap 4.x Breakpoints (mobile first order) */
+@media all and (min-width: 768px and max-width 990px) {
+  @import './css/tablet.css';	
+} 
+@media all and (min-width: 991px and max-width 1198px) { 
+  @import './css/desktop.css';	
+} 
+/* @media all and (min-width: 1199px) { ... }  */
+  

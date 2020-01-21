@@ -1,0 +1,10 @@
+
+
+main > aside {
+    flex: 0 0 100vw;
+    background: beige;
+}
+main > nav {
+    order: -1;
+    background: green;
+}
